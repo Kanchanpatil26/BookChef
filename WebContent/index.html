@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Apna Bank Dashboard</title>
+<!-- Include Font Awesome CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: url('foodd.png') no-repeat center center fixed;
+        background-size: cover; /* Ensures the image covers the whole background */
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+    .header {
+        background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+        font-size: 2em;
+        font-weight: bold;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        position: relative;
+    }
+    .header .fa {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 20px;
+        color: #fff;
+        font-size: 1em;
+    }
+    .header .admin-icon {
+        position: absolute;
+        top: 50%;
+        left: 100px;
+        transform: translateY(-50%);
+        color: #fff;
+        font-size: 1em;
+    }
+    .header .title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 100px;
+    }
+    .header .title i {
+        margin-right: 10px;
+        font-size: 1em; /* Made the header icon smaller */
+    }
+    .main-container {
+        display: flex;
+        flex: 1;
+        width: 100%;
+        justify-content: center;
+    }
+    .sidebar {
+        background-color: rgba(0, 0, 0, 0.8);
+        padding: 20px;
+        width: 250px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .sidebar h1 {
+        color: #fff;
+        margin-top: 10px;
+        margin-bottom: 1em;
+    }
+    .menu {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+    .menu li {
+        margin: 10px 0;
+    }
+    .menu a {
+        text-decoration: none;
+        color: #fff;
+        background-color: #444;
+        padding: 10px 20px;
+        display: flex;
+        align-items: center;
+        border-radius: 5px;
+        transition: background-color 0.3s, color 0.3s;
+    }
+    .menu a i {
+        margin-right: 10px;
+    }
+    .menu a:hover {
+        background-color: #0066cc;
+        color: #fff;
+    }
+    .content-wrapper {
+        display: flex;
+        justify-content: flex-start; /* Align content to the start of the container */
+        align-items: flex-start; /* Align content to the top of the container */
+        flex: 1;
+        padding: 20px;
+    }
+    .content {
+        color: #fff;
+        text-align: left; /* Align text to the left */
+        font-size: 2em;
+        font-weight: bold;
+        margin-left: 300px; /* Adjust the left margin to move the text closer to the sidebar */
+        margin-top: 180px; /* Adjust the top margin to move the text upwards */
+    }
+    .content .bookchef {
+        font-family: 'Cursive', sans-serif;
+        font-size: 2em;
+        margin-bottom: 0.5em;
+    }
+    .content .tagline {
+        font-size: 1em;
+        font-weight: normal;
+    }
+</style>
+</head>
+<body>
+<div class="header">
+    <i class="fas fa-book admin-icon"></i>
+    <div class="title">
+        <i class="fas fa-utensils"></i>
+        Welcome to BookChef
+    </div>
+</div>
+<div class="main-container">
+    <div class="sidebar">
+        <h1>Dashboard</h1>
+        <ul class="menu">
+            <li><a href="adminLogin.html"><i class="fas fa-user-shield"></i>Admin</a></li>
+            <li><a href="registerChef.html"><i class="fas fa-user-tie"></i>Chefs</a></li> <!-- Added a suitable icon for Chefs -->
+            <li><a href="registerUser.html"><i class="fas fa-users"></i>Users</a></li>
+        </ul>
+    </div>
+    <div class="content-wrapper">
+        <div class="content">
+            <div class="bookchef">The BookChef</div>
+            <div class="tagline">Chef at your service.....</div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
